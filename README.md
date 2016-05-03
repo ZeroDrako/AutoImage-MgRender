@@ -1,6 +1,6 @@
 # AutoImage-MgRender
 Script that make more easy download renders from "mg-renders.net" and "hentai.mg-renders.net"
--------------------------------------------------DESCRIPTION-------------------------------------------------
+## Description
 Script that make more easy download renders from "mg-renders.net" and "hentai.mg-renders.net"
 
 -Why?
@@ -36,7 +36,7 @@ Script that make more easy download renders from "mg-renders.net" and "hentai.mg
                         Note 1: By default this option works recursively, detect all images in the directory and sub-directorys.
                         Note 2: Your images need to have the original name.
 
--------------------------------------------------NOTES-------------------------------------------------
+## Notes
 @noframes
         Load script only 1 time per page
 @grant  GM_addStyle   &&  window.close
@@ -48,7 +48,7 @@ Script that make more easy download renders from "mg-renders.net" and "hentai.mg
         see: 
             http://stackoverflow.com/questions/19761241/window-close-and-self-close-do-not-close-the-window-in-chrome
 
--------------------------------------------------TO-DO-------------------------------------------------
+## ToDo
 -Add option to skip image already downlaaded at ZipGallery download. (no include those images in the zip.)
 -Add option to auto-close on gallery/search option. (not working fine)
 -Add option to auto-load nest page on gallerys (if gallery have 2 or more pages, load the next page when the zip of current page is already downloaded)
@@ -56,7 +56,7 @@ Script that make more easy download renders from "mg-renders.net" and "hentai.mg
 -Add css to the download bar.
 -Imrpove code
 
--------------------------------------------------CHANGELOG-------------------------------------------------
+## Changelog
 v3.0 -  Re-Write code again, page update, and tampermonkey update to v4, broke the script.
         Add GM_addStyle, window.close, GM_getValue, GM_setValue, GM_xmlhttpRequest to @grant (v4 tampermonkey not work if is not define).
         Add use use of "FileSaver.js" and "JsZip.js" librarys.
