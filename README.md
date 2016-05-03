@@ -14,6 +14,7 @@ So thi script download the full render.
 
 ###What this script do?
 Add some option in the page, you can see in the panel option named "ZD AutoImage MgRender v3"
+
 *OPTION* | *DESCRIPTION*
 --- | --- | ---
 **Show URLs?** | If you active this option, when you open a post, you can see the url to the full render hover the image. This is and old option from v1, maybe removed in future versions
@@ -29,7 +30,7 @@ Note 2: Your images need to have the original name.
 
 ## Notes
 1. **@noframes** : Load script only 1 time per page
-2. **@grant GM_addStyle** , **@grant window.close ** : Allow to close tab from a JS scrip in Chrome, see: [window.close and self.close do not close the window in Chrome](http://stackoverflow.com/questions/19761241/window-close-and-self-close-do-not-close-the-window-in-chrome)
+2. **@grant GM_addStyle && @grant window.close ** : Allow to close tab from a JS scrip in Chrome, see: [window.close and self.close do not close the window in Chrome](http://stackoverflow.com/questions/19761241/window-close-and-self-close-do-not-close-the-window-in-chrome)
 
 ## ToDo
 - [ ] Add option to skip image already downlaaded at ZipGallery download. (no include those images in the zip.)
