@@ -5,6 +5,8 @@
 // @description   Automatic download HD-Images from MG-Render to download folder
 // @author        ZeroDrako
 // @license       GPLv3; https://github.com/ZeroDrako/AutoImage-MgRender/blob/master/LICENSE
+// @updateURL     https://raw.githubusercontent.com/ZeroDrako/AutoImage-MgRender/master/ZD%20AutoImage%20MgRender.js
+// @downloadURL   https://raw.githubusercontent.com/ZeroDrako/AutoImage-MgRender/master/ZD%20AutoImage%20MgRender.js
 // @include       *mg-renders.net*
 // @grant         GM_addStyle
 // @grant         window.close
@@ -12,8 +14,8 @@
 // @grant         GM_setValue
 // @grant         GM_xmlhttpRequest
 // @noframes
-// @require       https://openuserjs.org/src/libs/baivong/FileSaver.min.js
-// @require       https://cdnjs.cloudflare.com/ajax/libs/jszip/3.0.0/jszip.min.js
+// @require       https://raw.githubusercontent.com/eligrey/FileSaver.js/master/FileSaver.min.js
+// @require       https://raw.githubusercontent.com/Stuk/jszip/master/dist/jszip.min.js
 // @icon          http://i1236.photobucket.com/albums/ff444/ZeroDrako/128_zpstpkixbgq.png
 // ==/UserScript==
 /*
