@@ -76,9 +76,9 @@ Script that make more easy download renders from "mg-renders.net" and "hentai.mg
 -------------------------------------------------TO-DO-------------------------------------------------
 -Add option to skip image already downlaaded at ZipGallery download. (no include those images in the zip.)
 -Add option to auto-close on gallery/search option. (not working fine)
--Add option to auto-load nest page on gallerys (if gallery have 2 or more pages, load the next page when the zip of current page is already downloaded)
++Add option to auto-load nest page on gallerys (if gallery have 2 or more pages, load the next page when the zip of current page is already downloaded) (Done v3.1)
 -Add option to auto-check new images from specific gallerys and download them.
--Add css to the download bar.
++Add css to the download bar. (Done v3.1)
 -Imrpove code
 
 -------------------------------------------------CHANGELOG-------------------------------------------------
