@@ -1,7 +1,8 @@
 # AutoImage-MgRender
-## Description
 Script that make more easy download renders from "mg-renders.net" and "hentai.mg-renders.net"
+
 [![MENU](https://raw.githubusercontent.com/ZeroDrako/AutoImage-MgRender/master/1.PNG)]
+
 [![Download Progressbar](https://raw.githubusercontent.com/ZeroDrako/AutoImage-MgRender/master/2.PNG)]
 ###Why?
 Because i download render from that page for make wallpapers and pack for rainmeter.
