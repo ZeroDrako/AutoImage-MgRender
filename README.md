@@ -5,16 +5,16 @@ Script that make more easy download renders from "mg-renders.net" and "hentai.mg
 
 ###Why?
 Because i download render from that page for make wallpapers and pack for rainmeter.
-The page only let you download a "small", "medium","large" image size, but in the server of the page is located the full size whith better resolution, and of course this option is hidden, for example:
+The page only let you download a "small", "medium","large" image size, but in the server of the page is located the full size whith better resolution:
 - small :     250kb
 - medium:     530kb
 - large:      1.1MB
-- full:       2.3MB (the best resolution, hidden option)
+- full:       2.3MB (the best resolution)
 So thi script download the full render.
 
-Markdown | Less | Pretty
+*OPTION* | *DESCRIPTION*
 --- | --- | ---
-*Still* | `renders` | **nicely**
+Show URLs? | If you active this option, when you open a post, you can see the url to the full render hover the image. This is and old option from v1, maybe removed in future versions
 1 | 2 | 3
 
 ###What this script do?
