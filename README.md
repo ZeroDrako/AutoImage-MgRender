@@ -1,4 +1,4 @@
-# AutoImage-MgRender
+# AutoImage MgRender v3.1
 UserScript written in JavaScript for Chrome & Tampermonkey, that make more easy download renders from "mg-renders.net" and "hentai.mg-renders.net".
 
 ![MENU](https://raw.githubusercontent.com/ZeroDrako/AutoImage-MgRender/master/0.PNG)
@@ -57,7 +57,7 @@ Add some option in the page, you can see in the panel option named "ZD AutoImage
 - [ ] Imrpove code
 
 ## Changelog
-**(Last 2 Releses, full changelog in **changelog.txt** file)**
+**(Last 2 Releses, full changelog in __changelog.txt__ file)**
 - v3.1
   - Add Option AutoPage to Panel Option. See "Auto Page" in description
   - Add funcion:
