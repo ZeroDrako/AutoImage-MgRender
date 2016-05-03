@@ -2,7 +2,7 @@
 UserScript written in JavaScript for Chrome & Tampermonkey, that make more easy download renders from "mg-renders.net" and "hentai.mg-renders.net".
 ![MENU](https://raw.githubusercontent.com/ZeroDrako/AutoImage-MgRender/master/0.PNG)
 
-###Why?
+### Why?
 Because i download render from that page for make wallpapers and pack for rainmeter.
 The page only let you download a "small", "medium","large" image size, but in the server of the page is located the full size whith better resolution:
 - small :     250kb
@@ -12,7 +12,7 @@ The page only let you download a "small", "medium","large" image size, but in th
  
 So thi script download the full render.
 
-###What this script do?
+### What this script do?
 Add some option in the page, you can see in the panel option named "ZD AutoImage MgRender v3"
 
 **OPTIONS**
@@ -47,7 +47,6 @@ Add some option in the page, you can see in the panel option named "ZD AutoImage
 1. **@noframes** : Load script only 1 time per page
 2. **@grant GM_addStyle** , **@grant window.close** : Allow to close tab from a JS scrip in Chrome, see: [window.close and self.close do not close the window in Chrome](http://stackoverflow.com/questions/19761241/window-close-and-self-close-do-not-close-the-window-in-chrome)
 3. **ZD AutoImage MgRender.greasyfork.js** : This version contains the __JsZip.jz__ and __FileSaver.js__ libs  inside the code because __Greasyfork__ don't let import code from original reps on github, and the versions on __cdnjs__ is outdated code
-4. 
 
 ## ToDo
 - [ ] Add option to skip image already downlaaded at ZipGallery download. (no include those images in the zip.)
