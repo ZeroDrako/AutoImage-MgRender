@@ -53,6 +53,13 @@ Add some option in the page, you can see in the panel option named "ZD AutoImage
 
 ## Changelog
 **(Last 2 Releses, full changelog in **changelog.txt** file)**
+- v3.1
+  - Add Option AutoPage to Panel Option. See "Auto Page" in description
+  - Add funcion:
+      - autoPageChange()
+  - Change the component "PROGRESS" for a "DIV->DIV->SPAWN" for the progressbar
+  - Add CSS to progressbar
+
 - v3.0
   - Re-Write code again, page update, and tampermonkey update to v4, broke the script.
   - Add GM_addStyle, window.close, GM_getValue, GM_setValue, GM_xmlhttpRequest to @grant (v4 tampermonkey not work if is not define).
@@ -76,7 +83,3 @@ Add some option in the page, you can see in the panel option named "ZD AutoImage
   - Add a "DESCRIPTION".
   - Fix code of getting the url.
   - Fix autoclose and show url.
-
-- v2.2
-  - Fix bugs.
-  - Last update of the script.
