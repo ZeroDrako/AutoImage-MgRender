@@ -39,6 +39,11 @@ Add some option in the page, you can see in the panel option named "ZD AutoImage
     - **Note 1:** *By default this option works recursively, detect all images in the directory and sub-directorys.*
     - **Note 2:** *Your images need to have the original name.*
 
+6. **Auto Page**
+  - Option to Automatic change the page. A gallery that have more than 1 can download all pages.
+  - Example: the page have 5 pages, if this option is actived then the script download the gallery of page 1, then the script change the curren page to page 2 and download the gallery of page 2, again change to page 3 and download the gallery of page 3...etc
+  - **This option simplifies the download of galleries with much renders and pages**
+
 ## Notes
 1. **@noframes** : Load script only 1 time per page
 2. **@grant GM_addStyle** , **@grant window.close** : Allow to close tab from a JS scrip in Chrome, see: [window.close and self.close do not close the window in Chrome](http://stackoverflow.com/questions/19761241/window-close-and-self-close-do-not-close-the-window-in-chrome)
