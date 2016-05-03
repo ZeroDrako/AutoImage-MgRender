@@ -1,8 +1,8 @@
 # AutoImage-MgRender
-Script that make more easy download renders from "mg-renders.net" and "hentai.mg-renders.net"
 ## Description
 Script that make more easy download renders from "mg-renders.net" and "hentai.mg-renders.net"
-
+[![MENU](https://raw.githubusercontent.com/ZeroDrako/AutoImage-MgRender/master/1.PNG)]
+[![Download Progressbar](https://raw.githubusercontent.com/ZeroDrako/AutoImage-MgRender/master/2.PNG)]
 ###Why?
 Because i download render from that page for make wallpapers and pack for rainmeter.
 The page only let you download a "small", "medium","large" image size, but in the server of the page is located the full size whith better resolution:
@@ -51,7 +51,8 @@ Add some option in the page, you can see in the panel option named "ZD AutoImage
 - [x] Add css to the download bar. (Done - v3.1)
 - [ ] Imrpove code
 
-## Changelog (Last 2 Releses, full changelog in **changelog.txt** file)
+## Changelog
+**(Last 2 Releses, full changelog in **changelog.txt** file)**
 - v3.0
   - Re-Write code again, page update, and tampermonkey update to v4, broke the script.
   - Add GM_addStyle, window.close, GM_getValue, GM_setValue, GM_xmlhttpRequest to @grant (v4 tampermonkey not work if is not define).
@@ -79,6 +80,3 @@ Add some option in the page, you can see in the panel option named "ZD AutoImage
 - v2.2
   - Fix bugs.
   - Last update of the script.
-
-
-[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](http://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID_HERE)
