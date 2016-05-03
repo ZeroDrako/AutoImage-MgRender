@@ -13,7 +13,6 @@
 // @noframes
 // @require       https://raw.githubusercontent.com/eligrey/FileSaver.js/master/FileSaver.min.js
 // @require       https://raw.githubusercontent.com/Stuk/jszip/master/dist/jszip.min.js
-// @require       file://D:\Documentos\HTML&JS\Scripts\ZD AutoImage MgRender v3.1.js
 // @icon          http://i1236.photobucket.com/albums/ff444/ZeroDrako/128_zpstpkixbgq.png
 // ==/UserScript==
 /* 
