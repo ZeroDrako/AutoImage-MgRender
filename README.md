@@ -45,12 +45,12 @@ Allow to close tab from a JS scrip in Chrome, see: [window.close and self.close 
 ## ToDo
 - [ ] Add option to skip image already downlaaded at ZipGallery download. (no include those images in the zip.)
 - [ ] Add option to auto-close on gallery/search option. (not working fine)
-- [ ] Add option to auto-load nest page on gallerys (if gallery have 2 or more pages, load the next page when the zip of current page is already downloaded)
+- [x] Add option to auto-load nest page on gallerys (if gallery have 2 or more pages, load the next page when the zip of current page is already downloaded) (Done - v3.1)
 - [ ] Add option to auto-check new images from specific gallerys and download them.
-- [ ] Add css to the download bar.
+- [x] Add css to the download bar. (Done - v3.1)
 - [ ] Imrpove code
 
-## Changelog
+## Changelog (Versions)
 v3.0 -  Re-Write code again, page update, and tampermonkey update to v4, broke the script.
         Add GM_addStyle, window.close, GM_getValue, GM_setValue, GM_xmlhttpRequest to @grant (v4 tampermonkey not work if is not define).
         Add use use of "FileSaver.js" and "JsZip.js" librarys.
