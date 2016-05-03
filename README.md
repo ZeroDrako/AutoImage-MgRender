@@ -14,9 +14,10 @@ So thi script download the full render.
 
 *OPTION* | *DESCRIPTION*
 --- | --- | ---
-Show URLs? | If you active this option, when you open a post, you can see the url to the full render hover the image. This is and old option from v1, maybe removed in future versions
-1 | 2 | 3
-
+**Show URLs?** | If you active this option, when you open a post, you can see the url to the full render hover the image. This is and old option from v1, maybe removed in future versions
+**** | 
+**** | 
+**** | 
 ###What this script do?
 Add some option in the page, you can see in the panel option named "ZD AutoImage MgRender v3"
     [OPTION]        [DESCRIPTION]
