@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name          ZD AutoImage MgRender v3.0
+// @name          ZD AutoImage MgRender
 // @namespace     https://github.com/ZeroDrako/AutoImage-MgRender
 // @version       3.0
 // @description   Automatic download HD-Images from MG-Render to download folder
