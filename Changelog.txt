@@ -1,3 +1,10 @@
+- v3.1
+  - Add Option AutoPage to Panel Option. See "Auto Page" in description
+  - Add funcion:
+      - autoPageChange()
+  - Change the component "PROGRESS" for a "DIV->DIV->SPAWN" for the progressbar
+  - Add CSS to progressbar
+
 - v3.0
   - Re-Write code again, page update, and tampermonkey update to v4, broke the script.
   - Add GM_addStyle, window.close, GM_getValue, GM_setValue, GM_xmlhttpRequest to @grant (v4 tampermonkey not work if is not define).
