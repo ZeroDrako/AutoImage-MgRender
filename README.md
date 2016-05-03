@@ -73,15 +73,15 @@ Add some option in the page, you can see in the panel option named "ZD AutoImage
   - Add a progressbar over the each image to see the progres of the image download.
   - Add a "TO-DO" list, things to implement in future versions.
   - Add a "DESCRIPTION".
-  - Fix code of getting the url.
-  - Fix autoclose and show url.
+  -Fix code of getting the url.
+  -Fix autoclose and show url.
 
-v2.2
-Fix bugs.
-Last update of the script.
+- v2.2
+  - Fix bugs.
+  - Last update of the script.
 
-v2.1
-Improve code, use od regex and compact some expresions.
+- v2.1
+ - Improve code, use od regex and compact some expresions.
 
 v2.1
 Fix some bugs.
