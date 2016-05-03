@@ -1,7 +1,7 @@
 # AutoImage-MgRender
 Script that make more easy download renders from "mg-renders.net" and "hentai.mg-renders.net"
 
-![MENU](https://raw.githubusercontent.com/ZeroDrako/AutoImage-MgRender/master/1.PNG) ![Download Progressbar](https://raw.githubusercontent.com/ZeroDrako/AutoImage-MgRender/master/2.PNG)
+![MENU](https://raw.githubusercontent.com/ZeroDrako/AutoImage-MgRender/master/0.PNG) ![Download Progressbar](https://raw.githubusercontent.com/ZeroDrako/AutoImage-MgRender/master/2.PNG)
 ###Why?
 Because i download render from that page for make wallpapers and pack for rainmeter.
 The page only let you download a "small", "medium","large" image size, but in the server of the page is located the full size whith better resolution:
