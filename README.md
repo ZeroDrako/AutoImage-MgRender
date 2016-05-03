@@ -15,7 +15,8 @@ So thi script download the full render.
 ###What this script do?
 Add some option in the page, you can see in the panel option named "ZD AutoImage MgRender v3"
 
-OPTIONS
+**OPTIONS** |
+
 1.**Show URLs?**
   - If you active this option, when you open a post, you can see the url to the full render hover the image. This is and old option from v1, maybe removed in future versions
 **Close Wind?** | Option to close the tab after download the render, imagine you open much images and active auto download, the image is download and now is very hard to close all tabs (and 12+ taps is a very high ram ater), so this option is for help you to kee orden and reduce you job.
