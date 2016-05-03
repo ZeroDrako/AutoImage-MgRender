@@ -10,6 +10,7 @@ The page only let you download a "small", "medium","large" image size, but in th
 - medium:     530kb
 - large:      1.1MB
 - full:       2.3MB (the best resolution)
+ 
 So thi script download the full render.
 
 ###What this script do?
@@ -31,7 +32,7 @@ Add some option in the page, you can see in the panel option named "ZD AutoImage
   ```HighSchool DxD --> http://www.mg-renders.net/search/label/High%20School%20DxD?&max-results=24```
   - The script download each render an compress into a zip file whit the name of the tag + number of page for example:
   ```High School DxD - 1.zip``` , ```High School DxD - 2.zip``` , ```...```
-  and download it for you. *Is the better option for download all images of a tag/anime/hentai.*
+  and download it for you. *__Is the better option for download all images of a tag/anime/hentai.__*
 
 5. **Files**
   - Option to check if an image is already downloaded. This option show a pop-up where you can choose a directory where you store you renders. If the script detects that the image you're to download is already downloaded skipt the image or show you an alert about it. Check "Alert Dial?" option.
@@ -51,60 +52,73 @@ Add some option in the page, you can see in the panel option named "ZD AutoImage
 - [ ] Imrpove code
 
 ## Changelog (Versions)
-v3.0 -  Re-Write code again, page update, and tampermonkey update to v4, broke the script.
-        Add GM_addStyle, window.close, GM_getValue, GM_setValue, GM_xmlhttpRequest to @grant (v4 tampermonkey not work if is not define).
-        Add use use of "FileSaver.js" and "JsZip.js" librarys.
-        Add option to Check if a file is already downloaded.
-        Add option to disable auto-download of a image.
-        Add option do disable auto-download of a gallery. 
-        Add option to download the gallery as a zip (the name is generate whit the tag name and the number of the page).
-        Add Functions:
-                getGalleryLinks(), getGalleryName(), downloadGallery(), onDownGalleryComplete()
-                filesToString(), stringToFiles(), blobToBase64()
-        Add CSS to the "Panel Option".
-        Aad coments to the code.
-        Add a progressbar over the each image to see the progres of the image download.
-        Add a "TO-DO" list, things to implement in future versions.
-        Add a "DESCRIPTION".
-        Fix code of getting the url.
-        Fix autoclose and show url.
+- v3.0
+  - Re-Write code again, page update, and tampermonkey update to v4, broke the script.
+  - Add GM_addStyle, window.close, GM_getValue, GM_setValue, GM_xmlhttpRequest to @grant (v4 tampermonkey not work if is not define).
+  - Add use use of "FileSaver.js" and "JsZip.js" librarys.
+  - Add option to Check if a file is already downloaded.
+  - Add option to disable auto-download of a image.
+  - Add option do disable auto-download of a gallery. 
+  - Add option to download the gallery as a zip (the name is generate whit the tag name and the number of the page).
+  - Add Functions:
+    - getGalleryLinks()
+    - getGalleryName()
+    - downloadGallery()
+    - onDownGalleryComplete()
+    - filesToString()
+    - stringToFiles()
+    - blobToBase64()
+  - Add CSS to the "Panel Option".
+  - Aad coments to the code.
+  - Add a progressbar over the each image to see the progres of the image download.
+  - Add a "TO-DO" list, things to implement in future versions.
+  - Add a "DESCRIPTION".
+  - Fix code of getting the url.
+  - Fix autoclose and show url.
+
+v2.2
+Fix bugs.
+Last update of the script.
+
+v2.1
+Improve code, use od regex and compact some expresions.
+
+v2.1
+Fix some bugs.
+
+v2.0
+Re-Write all code again, for some reason the page update again and broke the skrip.
+Now the image is downloaded whit "XMLHttpRequest".
+Now use the "FileSaver.js" library, for save the iamge.
+Now the code check before add the option pane, if it is necesary add or not.
+Add option to show in a new tab all links from a gallery.
+Add option to auto close the page, see info about GM_addStyle.
+Add functions to make the code more easy:
+loadPreferences(), addSettingPanel(), getLink(), close(),
+getName(), downloadImage(), decodeURLRecursively(), master()
+Add NOTES for future references.
+Add @noframes.
+Add Changelog.
+Establish a time before close the tab, to make sure the image is downloaded.
+
+v1.5
+Fixed some code, because a page update.
+Re-write all code for make more easy to undertand.
+
+v1.1
+Fixed code of getting the url.
+
+v1.0
+Finaly add a "Option pane" in HTML.
+Add To show url over the image.
+Add option to verify if an image is already downloade.
+Add osibility to save a history downloads.
 
 
-v2.2 -  Fix bugs.
-        Last update of the script.
-
-v2.1 -  Improve code, use od regex and compact some expresions.
-
-v2.1 -  Fix some bugs.
-
-v2.0 -  Re-Write all code again, for some reason the page update again and broke the skrip.
-        Now the image is downloaded whit "XMLHttpRequest".
-        Now use the "FileSaver.js" library, for save the iamge.
-        Now the code check before add the option pane, if it is necesary add or not.
-        Add option to show in a new tab all links from a gallery.
-        Add option to auto close the page, see info about GM_addStyle.
-        Add functions to make the code more easy:
-            loadPreferences(), addSettingPanel(), getLink(), close(),
-            getName(), downloadImage(), decodeURLRecursively(), master()
-        Add NOTES for future references.
-        Add @noframes.
-        Add Changelog.
-        Establish a time before close the tab, to make sure the image is downloaded.
-
-v1.5 -  Fixed some code, because a page update.
-        Re-write all code for make more easy to undertand.
-
-v1.1 -  Fixed code of getting the url.
-
-v1.0 -  Finaly add a "Option pane" in HTML.
-        Add To show url over the image.
-        Add option to verify if an image is already downloade.
-        Add osibility to save a history downloads.
-
-
-v.5  -  Add get the link from hidden DIV.
-         Fix code that make the link again.
-         Now support Hentai renders page.
+v.5 
+Add get the link from hidden DIV.
+Fix code that make the link again.
+Now support Hentai renders page.
 
 v.4     -Add option to show url hover the image (develop purpose).
 
@@ -113,4 +127,4 @@ v.3     -Fix the code that make the link to full size, now using regex.
 v.2     -Now remplace the link in the 'Download Render' button whit the full image link.
 
 v.1     -Test release, alpha mode.
-         Options, Show url of full image render in the console.
+Options, Show url of full image render in the console.
