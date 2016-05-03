@@ -1,5 +1,5 @@
 # AutoImage-MgRender
-Script that make more easy download renders from "mg-renders.net" and "hentai.mg-renders.net"
+UserScript written in JavaScript for Chrome & Tampermonkey, that make more easy download renders from "mg-renders.net" and "hentai.mg-renders.net".
 
 ![MENU](https://raw.githubusercontent.com/ZeroDrako/AutoImage-MgRender/master/0.PNG)
 
