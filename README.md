@@ -25,7 +25,7 @@ Add some option in the page, you can see in the panel option named "ZD AutoImage
 
 ## Notes
 1. **@noframes** : Load script only 1 time per page
-2. **@grant GM_addStyle AND @grant window.close ** : Allow to close tab from a JS scrip in Chrome, see: [window.close and self.close do not close the window in Chrome](http://stackoverflow.com/questions/19761241/window-close-and-self-close-do-not-close-the-window-in-chrome)
+2. **@grant GM_addStyle AND @grant window.close** : Allow to close tab from a JS scrip in Chrome, see: [window.close and self.close do not close the window in Chrome](http://stackoverflow.com/questions/19761241/window-close-and-self-close-do-not-close-the-window-in-chrome)
 
 ## ToDo
 - [ ] Add option to skip image already downlaaded at ZipGallery download. (no include those images in the zip.)
