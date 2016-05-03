@@ -1,3 +1,22 @@
+// ==UserScript==
+// @name          ZD AutoImage MgRender
+// @namespace     https://github.com/ZeroDrako/AutoImage-MgRender
+// @version       3.1
+// @description   Automatic download HD-Images from MG-Render to download folder
+// @author        ZeroDrako
+// @license       GPLv3; https://github.com/ZeroDrako/AutoImage-MgRender/blob/master/LICENSE
+// @include       *mg-renders.net*
+// @grant         GM_addStyle
+// @grant         window.close
+// @grant         GM_getValue
+// @grant         GM_setValue
+// @grant         GM_xmlhttpRequest
+// @noframes
+// @require       https://openuserjs.org/src/libs/baivong/FileSaver.min.js
+// @require       https://cdnjs.cloudflare.com/ajax/libs/jszip/3.0.0/jszip.min.js
+// @icon          http://i1236.photobucket.com/albums/ff444/ZeroDrako/128_zpstpkixbgq.png
+// ==/UserScript==
+/*
 /*
 -------------------------------------------------DESCRIPTION-------------------------------------------------
 Script that make more easy download renders from "mg-renders.net" and "hentai.mg-renders.net"
