@@ -153,6 +153,7 @@ v.1     -Test release, alpha mode.
          Options, Show url of full image render in the console.
  */
 
+/*-------------------------------------------------Global Variables---------------------------------------------------*/
 "use strict";
 var downFiles = [],
     links = [],
