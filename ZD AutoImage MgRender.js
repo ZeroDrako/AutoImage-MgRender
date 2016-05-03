@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name          ZD AutoImage MgRender
 // @namespace     https://github.com/ZeroDrako/AutoImage-MgRender
-// @version       3.0
+// @version       3.1
 // @description   Automatic download HD-Images from MG-Render to download folder
 // @author        ZeroDrako
 // @license       GPLv3; https://github.com/ZeroDrako/AutoImage-MgRender/blob/master/LICENSE
@@ -18,17 +18,17 @@
 // @require       https://raw.githubusercontent.com/Stuk/jszip/master/dist/jszip.min.js
 // @icon          http://i1236.photobucket.com/albums/ff444/ZeroDrako/128_zpstpkixbgq.png
 // ==/UserScript==
-/* 
+/*
 -------------------------------------------------DESCRIPTION-------------------------------------------------
 Script that make more easy download renders from "mg-renders.net" and "hentai.mg-renders.net"
 
 -Why?
     Because i download render from that page for make wallpapers and pack for rainmeter.
-    The page only let you download a "small", "medium","large" image size, but in the server of the page 
+    The page only let you download a "small", "medium","large" image size, but in the server of the page
         is located the full size whith better resolution, and of course this option is hidden, for example:
-        small :     250kb   
-        medium:     530kb   
-        large:      1.1MB   
+        small :     250kb
+        medium:     530kb
+        large:      1.1MB
         full:       2.3MB  (the best resolution, hidden option)
     So thi script download the full render.
 
@@ -42,7 +42,7 @@ Script that make more easy download renders from "mg-renders.net" and "hentai.mg
                             option is for help you to kee orden and reduce you job.
     Alert Dial? --> Option to show an alert option , this only works if "Files" option is already set.
                             Inform you if you has already downloaded an image (to skip download again).
-    ZipGallery? --> Option to download a gallery. A gallery is a page whit a tag or a search result, for example the pages that 
+    ZipGallery? --> Option to download a gallery. A gallery is a page whit a tag or a search result, for example the pages that
                             show you the list of render under a specific tag like:
                             'HighSchool DxD' --> http://www.mg-renders.net/search/label/High%20School%20DxD?&max-results=24
                             'THE iDOLM@STER' --> http://www.mg-renders.net/search/label/THE%20iDOLM%40STER?&max-results=24
@@ -54,34 +54,46 @@ Script that make more easy download renders from "mg-renders.net" and "hentai.mg
                             skipt the image or show you an alert about it. Check "Alert Dial?" option.
                         Note 1: By default this option works recursively, detect all images in the directory and sub-directorys.
                         Note 2: Your images need to have the original name.
+    Auto Page:  --> Option to Automatic change the page. A gallery that have more than 1 can download all pages.
+                        Example: the page have 5 pages, if this option is actived then the script download the gallery of page 1,
+                                 then the script change the curren page to page 2 and download the gallery of page 2,
+                                 again change to page 3 and download the gallery of page 3...etc
+                        This option simplifies the download of galleries with much renders and pages
+
 
 -------------------------------------------------NOTES-------------------------------------------------
 @noframes
         Load script only 1 time per page
 @grant  GM_addStyle   &&  window.close
-        Allow to close tab from a JS scrip in Chrome. 
-        see: 
+        Allow to close tab from a JS scrip in Chrome.
+        see:
             http://stackoverflow.com/questions/19761241/window-close-and-self-close-do-not-close-the-window-in-chrome
 @grant  window.close
-        Allow to close tab from a JS scrip in Chrome. (Update to Tampermonkey v4) 
-        see: 
+        Allow to close tab from a JS scrip in Chrome. (Update to Tampermonkey v4)
+        see:
             http://stackoverflow.com/questions/19761241/window-close-and-self-close-do-not-close-the-window-in-chrome
 
 -------------------------------------------------TO-DO-------------------------------------------------
 -Add option to skip image already downlaaded at ZipGallery download. (no include those images in the zip.)
 -Add option to auto-close on gallery/search option. (not working fine)
--Add option to auto-load nest page on gallerys (if gallery have 2 or more pages, load the next page when the zip of current page is already downloaded)
++Add option to auto-load nest page on gallerys (if gallery have 2 or more pages, load the next page when the zip of current page is already downloaded) (Done v3.1)
 -Add option to auto-check new images from specific gallerys and download them.
--Add css to the download bar.
++Add css to the download bar. (Done v3.1)
 -Imrpove code
 
 -------------------------------------------------CHANGELOG-------------------------------------------------
+v3.1 -  Add Option AutoPage to Panel Option. See "Auto Page" in description
+        Add funcion:
+                autoPageChange()
+        Change the component "PROGRESS" for a "DIV->DIV->SPAWN" for the progressbar
+        Add CSS to progressbar
+
 v3.0 -  Re-Write code again, page update, and tampermonkey update to v4, broke the script.
         Add GM_addStyle, window.close, GM_getValue, GM_setValue, GM_xmlhttpRequest to @grant (v4 tampermonkey not work if is not define).
         Add use use of "FileSaver.js" and "JsZip.js" librarys.
         Add option to Check if a file is already downloaded.
         Add option to disable auto-download of a image.
-        Add option do disable auto-download of a gallery. 
+        Add option do disable auto-download of a gallery.
         Add option to download the gallery as a zip (the name is generate whit the tag name and the number of the page).
         Add Functions:
                 getGalleryLinks(), getGalleryName(), downloadGallery(), onDownGalleryComplete()
@@ -176,10 +188,11 @@ function addSettingPanel() {
     .ZdBar{padding:.3em 115px .5em;font-size:12px !important;background:#21262a !important;border:solid 1px #3a434a !important}
     */
     var css = '#ZDtitle,.ZDoption{color:#989c9f !important}#popup{border:0px solid #21262a;background-color:#000;text-align:center}#ZDtitle{font-family:Play;font-size:20px;padding-top:20px}.ZDoption{font-size:16px}#ZDautodown,#ZDautoclose,#ZDzipgallery,#ZDautopage,#ZDalertdialog,#ZDdirhelp,#ZDsave,#ZDshowurl{font-size:12px;font-weight:400;opacity:.7;float:right !important;color:#fff;border:0px solid #3a434a;background:#3a434a}#ZDdirectory{color:#666;border:1px solid #202529;background:#000}';
+    var cs2 = '.meter{height:10px;position:relative;background:#555;-moz-border-radius:0;-webkit-border-radius:0;padding:0}.meter > span{display:block;height:100%;background-color:#2bc253;position:relative;overflow:hidden}.meter > span:after,.animate > span > span{content:"";position:absolute;top:0;left:0;bottom:0;right:0;z-index:1;-webkit-background-size:50px 50px;-moz-background-size:50px 50px;overflow:hidde';
     var style = document.createElement('style');
     style.type = 'text/css';
     style.id = 'ZDStyle';
-    style.innerHTML = css;
+    style.innerHTML = css+cs2;
     document.head.appendChild(style);
     var settingPanel = document.createElement('div');
     settingPanel.id = 'ZDpopup';
@@ -269,6 +282,7 @@ function addProgressBar() {
     var toop = document.getElementsByClassName(className);
 
     for (var i = 0; i < toop.length; i++) {
+        /*
         var progressBar = document.createElement('PROGRESS');
         var br = document.createElement('BR');
         progressBar.setAttribute("value", "0");
@@ -277,6 +291,17 @@ function addProgressBar() {
         progressBar.setAttribute("class", ("ZdBar"));
         toop[i].appendChild(progressBar);
         toop[i].appendChild(br);
+        */
+        var div1 = document.createElement('div');
+        var div2 = document.createElement('div');
+        var span = document.createElement('span');
+        div1.setAttribute('id', 'page-wrap');
+        div2.setAttribute('class', 'meter');
+        span.setAttribute('id', ("ZdBar" + i));
+        span.setAttribute('style', 'width: 0%');
+        div2.appendChild(span);
+        div1.appendChild(div2);
+        toop[i].appendChild(div1);
     }
 }
 
@@ -408,7 +433,7 @@ function downloadGallery(url, count) {
     xhr.onprogress = function(e) {
         if (e.lengthComputable) {
             //console.log( (e.loaded / e.total) * 100 );
-            progressBar.setAttribute("value", ((e.loaded / e.total) * 100));
+            progressBar.setAttribute("style", 'width: '+((e.loaded / e.total) * 100)+'%');
             //progressBar.value = (e.loaded / e.total) * 100;
             //progressBar.textContent = progressBar.value; // Fallback for unsupported browsers.
         }
