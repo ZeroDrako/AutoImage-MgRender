@@ -37,23 +37,18 @@ Script that make more easy download renders from "mg-renders.net" and "hentai.mg
                         Note 2: Your images need to have the original name.
 
 ## Notes
-**@noframes** Load script only 1 time per page
-@grant  GM_addStyle   &&  window.close
-        Allow to close tab from a JS scrip in Chrome. 
-        see: 
-            http://stackoverflow.com/questions/19761241/window-close-and-self-close-do-not-close-the-window-in-chrome
-@grant  window.close
-        Allow to close tab from a JS scrip in Chrome. (Update to Tampermonkey v4) 
-        see: 
-            http://stackoverflow.com/questions/19761241/window-close-and-self-close-do-not-close-the-window-in-chrome
+**@noframes** 
+Load script only 1 time per page
+**@grant GM_addStyle** , **@grant window.close **
+Allow to close tab from a JS scrip in Chrome, see: [window.close and self.close do not close the window in Chrome] (http://stackoverflow.com/questions/19761241/window-close-and-self-close-do-not-close-the-window-in-chrome)
 
 ## ToDo
--Add option to skip image already downlaaded at ZipGallery download. (no include those images in the zip.)
--Add option to auto-close on gallery/search option. (not working fine)
--Add option to auto-load nest page on gallerys (if gallery have 2 or more pages, load the next page when the zip of current page is already downloaded)
--Add option to auto-check new images from specific gallerys and download them.
--Add css to the download bar.
--Imrpove code
+- [ ] Add option to skip image already downlaaded at ZipGallery download. (no include those images in the zip.)
+- [ ] Add option to auto-close on gallery/search option. (not working fine)
+- [ ] Add option to auto-load nest page on gallerys (if gallery have 2 or more pages, load the next page when the zip of current page is already downloaded)
+- [ ] Add option to auto-check new images from specific gallerys and download them.
+- [ ] Add css to the download bar.
+- [ ] Imrpove code
 
 ## Changelog
 v3.0 -  Re-Write code again, page update, and tampermonkey update to v4, broke the script.
