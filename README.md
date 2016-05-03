@@ -37,8 +37,7 @@ Script that make more easy download renders from "mg-renders.net" and "hentai.mg
                         Note 2: Your images need to have the original name.
 
 ## Notes
-@noframes
-        Load script only 1 time per page
+**@noframes** Load script only 1 time per page
 @grant  GM_addStyle   &&  window.close
         Allow to close tab from a JS scrip in Chrome. 
         see: 
