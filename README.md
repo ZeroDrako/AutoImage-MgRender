@@ -24,12 +24,12 @@ Add some option in the page, you can see in the panel option named "ZD AutoImage
   - Option to close the tab after download the render, imagine you open much images and active auto download, the image is download and now is very hard to close all tabs (and 12+ taps is a very high ram ater), so this option is for help you to kee orden and reduce you job.
 
 3. **Alert Dial?**
-  - Option to show an alert option , this only works if *Files* option is already set. Inform you if you has already downloaded an image (to skip download again).
+  - Option to show an alert option , this only works if *__Files__* option is already set. Inform you if you has already downloaded an image (to skip download again).
 
 4. **ZipGallery?**
   - Option to download a gallery. A gallery is a page whit a tag or a search result, for example the pages that show you the list of render under a specific tag like: 
   ```HighSchool DxD --> http://www.mg-renders.net/search/label/High%20School%20DxD?&max-results=24```
-  - The script download each render an compress into a zip file whit the name of the tag + number of page, Example:
+  - The script download each render an compress into a zip file whit the name of the tag + number of page for example:
   ```High School DxD - 1.zip``` , ```High School DxD - 2.zip``` , ```...```
   and download it for you. *Is the better option for download all images of a tag/anime/hentai.*
 
