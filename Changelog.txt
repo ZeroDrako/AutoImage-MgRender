@@ -1,3 +1,16 @@
+- v3.2
+  - Add Option to Skip Files already downloaded from ZipGallery
+  - Add Option to generate a report of files skipped from zip
+  - Add Option to download a image, On click the progressbar
+  - Add Default config, now over each image is show a progressbar whit the state of the download (green > downloaded / gray > no downloaded)
+  - Change the variable links forn a array["linkImage"] with only links to a bi-domensional array[[fileName],[linkImage]] with names of file and links.
+  - Fix Dialog aler, now ask you if you wish re-download a image
+  - Fix Function to get the link to full image, change regx expresion for a char-array
+  - Add functions:
+    - downloadOne(), downloadCheck()
+  - Imrpove code of function "master()"
+  - Change the url of "JSZip" and "FileSaver" libs, now located on my github. (to avoid the lib update and broke my script)
+
 - v3.1
   - Add Option AutoPage to Panel Option. See "Auto Page" in description
   - Add funcion:
