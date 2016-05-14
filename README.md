@@ -36,6 +36,7 @@ Add some option in the page, you can see in the panel option named "ZD AutoImage
   and download it for you. *__Is the better option for download all images of a tag/anime/hentai.__*
 
 5. **Files**
+  - __*Important*__, see note __File Access__ to use this function
   - Option to check if an image is already downloaded. This option show a pop-up where you can choose a directory where you store you renders. If the script detects that the image you're to download is already downloaded skipt the image or show you an alert about it. Check "Alert Dial?" option.
     - **Note 1:** *By default this option works recursively, detect all images in the directory and sub-directorys.*
     - **Note 2:** *Your images need to have the original name.*
@@ -64,6 +65,9 @@ Add some option in the page, you can see in the panel option named "ZD AutoImage
      - Link: The link to direct image.
 
 ## Notes
+0. **File Access**: By default, Greasemonkey/Tampermonkey don't run scripts whit __file:///__ urls, that means that don't let the script have acces to files store in your PC, So, you need to enable it first.
+  - For Greasemonkey, open __about:config__ and change __greasemonkey.fileIsGreaseable__ to true
+  - For Tampermonkey, go to Chrome extension page, and tick the __Allow access to file URLs__ checkbox at the Tampermonkey extension section.
 1. **@noframes** : Load script only 1 time per page
 2. **@grant GM_addStyle** , **@grant window.close** : Allow to close tab from a JS scrip in Chrome, see: [window.close and self.close do not close the window in Chrome](http://stackoverflow.com/questions/19761241/window-close-and-self-close-do-not-close-the-window-in-chrome)
 3. **ZD AutoImage MgRender.greasyfork.js** : This version contains the __JsZip.jz__ and __FileSaver.js__ libs  inside the code because __Greasyfork__ don't let import code from original reps on github, and the versions on __cdnjs__ is outdated code
